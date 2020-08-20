@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Four card feature section</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+    html,body{
+      color:hsl(229, 6%, 66%);
+      font-family: 'Poppins', 'sans-serif';
+    }
+    .font-weight-bold, .display-4{
+      color: hsl(234, 12%, 34%) !important;
+    }
+
+    .shadow{
+      box-shadow: 3px 3px 6px;
+    }
+    .attribution { font-size: .8rem; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body class="bg-light">
+  <div class="container-fluid">
+    <div class="lead-banner text-center">
+      <p class="display-4 reduce-font">Reliable, efficient delivery</p>
+      <p class="display-4 font-weight-bold reduce-font">Powered by Technology</p>
+      <p class="text-muted">
+        Our Artificial Intelligence powered tools use millions of project data points 
+        to ensure that your project is successful
+      </p>
+    </div>
+    <div class="row justify-content-center align-items-center">
+      <div class="col-md-4">
+        <div class="card m-5 shadow">
+          <div style="height: 5px; background-color:hsl(180, 62%, 55%);"></div>
+          <div class="card-content p-3">
+            <p class="font-weight-bold">Supervisor</p>
+            <p class="text-muted">Monitors activity to identify project roadblocks</p>
+          </div>
+          <div class="ml-auto m-3">
+            <img src="images/icon-supervisor.svg" alt="img">
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card m-5 shadow">
+          <div style="height: 5px; background-color:hsl(0, 78%, 62%);"></div>
+          <div class="card-content p-3">
+            <p class="font-weight-bold">Team Builder</p>
+            <p class="text-muted">Scans our talent network to create the optimal team for your project</p>
+          </div>
+          <div class="ml-auto m-3">
+            <img src="images/icon-team-builder.svg" alt="img">
+          </div>
+        </div>
+        <div class="card m-5 shadow">
+          <div style="height: 5px; background-color:hsl(34, 97%, 64%);"></div>
+          <div class="card-content p-3">
+            <p class="font-weight-bold">Karma</p>
+            <p class="text-muted">Regularly evaluates our talent to ensure quality</p>
+          </div>
+          <div class="ml-auto m-3">
+            <img src="images/icon-karma.svg" alt="img">
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card m-5 shadow">
+          <div style="height: 5px; background-color:hsl(212, 86%, 64%);"></div>
+          <div class="card-content p-3">
+            <p class="font-weight-bold">Calculator</p>
+            <p class="text-muted">Uses data from past projects to provide better delivery estimates</p>
+          </div>
+          <div class="ml-auto m-3">
+            <img src="images/icon-calculator.svg" alt="img">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <footer>
+    <p class="attribution mt-5">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="https://github.com/fuadop">Fuad Olatunji</a>.
+    </p>
+  </footer>
+  <script>
+    const leadTexts = document.querySelectorAll(".reduce-font");
+    if(window.innerWidth <= 700){
+      leadTexts.forEach(text => {
+      text.classList.remove("display-4");
+      text.style.fontSize = "1.5rem";
+      })
+    }
+  </script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</body>
+</html>
